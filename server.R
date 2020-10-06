@@ -14,15 +14,12 @@ length(day_time) #733
 
 
 
-#COdata_Abbo <- filter(COdata, STATION_NAME == stations[1])
-
 # Define server logic required to plot various variables 
 shinyServer(function(input, output) {
   
   
   # want "REPORTED_VALUE ~ DATE_PST"
-  # Generate a plot of the requested variable against mpg and only 
-  # include outliers if requested
+  # Generate a line plot of CO concentration for the requested station 
   output$COplot <- renderPlot({
     station_name <- input$station
     filtered_data <- filter(COdata, STATION_NAME == station_name)
