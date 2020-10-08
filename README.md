@@ -5,4 +5,4 @@ Data was downloaded from  ftp://ftp.env.gov.bc.ca/pub/outgoing/AIR/Hourly_Raw_Ai
 Website can be accessed here:  https://phuongdmn.shinyapps.io/trackco2nono2/ <br />
 
 Todo:
-- Change input to checkbox style so users can compare between different stations
+- Add a Date slider so users can select a date & time range they want to plot
