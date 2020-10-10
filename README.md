@@ -6,3 +6,15 @@ Website can be accessed here:  https://phuongdmn.shinyapps.io/trackco2nono2/ <br
 
 Todo:
 - Add a Date slider so users can select a date & time range they want to plot
+
+### Solar System Exploration, 1950s – 1960s
+
+- [ ] Mercury
+- [x] Venus
+- [x] Earth (Orbit/Moon)
+- [x] Mars
+- [ ] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune
+- [ ] Comet Haley
