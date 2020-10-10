@@ -22,8 +22,8 @@ shinyUI(pageWithSidebar(
                 choices = stations),
     sliderInput("date", "Date range", 
                 min = as.Date("2020-09-06"),
-                max = as.Date("2020-10-06 12:00"),
-                value = c(as.Date("2020-09-06 00:00"),as.Date("2020-10-06 12:00")))),
+                max = as.Date("2020-10-06"),
+                value = c(as.Date("2020-09-06"),as.Date("2020-10-06")))),
   
   mainPanel(plotOutput("COplot"))
 ))
