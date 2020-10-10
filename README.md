@@ -4,17 +4,7 @@ A simply Shiny app that displays CO concentration in of different stations in Me
 Data was downloaded from  ftp://ftp.env.gov.bc.ca/pub/outgoing/AIR/Hourly_Raw_Air_Data/Air_Quality/ <br />
 Website can be accessed here:  https://phuongdmn.shinyapps.io/trackco2nono2/ <br />
 
-Todo:
-- Add a Date slider so users can select a date & time range they want to plot
+### TODO
 
-### Solar System Exploration, 1950s – 1960s
-
-- [ ] Mercury
-- [x] Venus
-- [x] Earth (Orbit/Moon)
-- [x] Mars
-- [ ] Jupiter
-- [ ] Saturn
-- [ ] Uranus
-- [ ] Neptune
-- [ ] Comet Haley
+- [x] Date slider to plot a certain date range
+- [ ] Summary panel for the current plot
