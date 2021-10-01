@@ -1,29 +1,29 @@
 library(shiny)
 library(shinyWidgets)
+library(plotly)
 
 ## finding out names of stations where [CO] is collected from
-COdata <- read.csv("data/CO.csv")
-COdata <- subset(COdata, select = c(DATE_PST, STATION_NAME, REPORTED_VALUE, UNITS))
-COdata <- na.omit(COdata)
+load("COdata.RData")
 
 ## finding out names of stations where [CO] is collected from
 stations <- unique(COdata$STATION_NAME)
-# Define UI for CO concentration
+# Define UI for miles per gallon application
 shinyUI(pageWithSidebar(
   
   # Application title
   headerPanel("Plotting the CO concentration across stations in Metro Vancouver Sept-Oct 2020"),
 
   
-  # Sidebar with controls to select stations
-  # Date slider to select date range to plot
+  # Sidebar with controls to select the variable to plot against mpg
+  # and to specify whether outliers should be included
   sidebarPanel(
     selectInput("station", "Station:",
                 choices = stations),
     sliderInput("date", "Date range", 
-                min = as.Date("2020-09-06"),
-                max = as.Date("2020-10-06"),
-                value = c(as.Date("2020-09-06"),as.Date("2020-10-06")))),
+                min = as.POSIXct("2020-09-06"),
+                max = as.POSIXct("2020-10-06"),
+                value = c(as.POSIXct("2020-09-06"),as.POSIXct("2020-10-06")))),
   
-  mainPanel(plotOutput("COplot"))
+  mainPanel(plotlyOutput("COplot"))
 ))
+
