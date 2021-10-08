@@ -9,9 +9,6 @@ load("COdata.RData")
 # Define server logic required to plot various variables 
 shinyServer(function(input, output) {
   
-  
-  # want "REPORTED_VALUE ~ DATE_PST"
-  # Generate a plot of the requested variable against mpg and only 
   output$COplot <- renderPlotly({
     station_name <- input$station
     min_date <- input$date[1]
