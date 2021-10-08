@@ -13,9 +13,6 @@ shinyUI(pageWithSidebar(
   # Application title
   headerPanel("Plotting the CO concentration across stations in Metro Vancouver Sept-Oct 2020"),
 
-  
-  # Sidebar with controls to select the variable to plot against mpg
-  # and to specify whether outliers should be included
   sidebarPanel(
     selectInput("station", "Station:",
                 choices = stations),
